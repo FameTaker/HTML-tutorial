@@ -1,0 +1,31 @@
+<h2>This section is about Images
+<p> Every image should have the 4 attributes. The img attribute, the source <q>src</q> attribute, the <q>alt</q>explenation attribute and width,height attribute.</p>
+<p>The alt text should be simple and can be left blank
+<br>The width and height attributes are always mean pixels. The order does not matter. When not included the actual size of the picture is applied.
+<br> HTML can support many different image types however we should consider the pixel count and image size when deciding. JPG and PNG are default images but they can be heavy or break the page. 
+SVG is the vectoral format. SVG is lightweight and can adjust itself to fit page however it is not an image but a code and 
+</p>
+<h3>Responsive Images</h3>
+<p>
+    In html different resolutions of the same image can be uploaded and then browser can decide which image to use. </p>
+
+<img srcset="https://upload.wikimedia.org/wikipedia/commons/c/cb/Chorizema_cordatum1.jpg 1x,
+https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Gametophyte2.png/768px-Gametophyte2.png 2x,
+https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cephalanthus_occidentalis_occidentalis1.jpg/1280px-Cephalanthus_occidentalis_occidentalis1.jpg 4x" alt="wikipedia explenation">
+
+<p> we can use &lt;picture&gt; element for more configurations.</p>
+<picture>
+    <source media="(min-width:600px)" 
+    srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cephalanthus_occidentalis_occidentalis1.jpg/800px-Cephalanthus_occidentalis_occidentalis1.jpg">
+    <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cephalanthus_occidentalis_occidentalis1.jpg/2560px-Cephalanthus_occidentalis_occidentalis1.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cephalanthus_occidentalis_occidentalis1.jpg/640px-Cephalanthus_occidentalis_occidentalis1.jpg"
+    width="480" height="360"
+    alt="Cephalanthus occidentalis" >
+</picture>
+ 
+<figure>
+    <img src="https://autonom.altinbas.edu.tr/wp-content/uploads/2022/04/DSC09552-min-1.jpg" width="960" height="720" alt="AUTONOM">
+    <figcaption> <i>Elektrikli, Otonom ve İnsansı Araçlar Uygulama ve Araştırma Merkezi</i></figcaption>
+</figure>
+<p></p>
+<a href="../HTMLNav.html">Back </a>
